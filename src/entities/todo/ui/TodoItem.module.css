@@ -1,0 +1,55 @@
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 0.2s ease;
+}
+
+.todoItem:hover {
+  background-color: var(--color-hover);
+}
+
+.todoItem:last-child {
+  border-bottom: none;
+}
+
+.todoItemContent {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.todoCheckbox {
+  margin-right: 1rem;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.todoText {
+  font-size: 1rem;
+  color: var(--color-text);
+  transition: color 0.2s;
+}
+
+.completed .todoText {
+  color: var(--color-text-secondary);
+  text-decoration: line-through;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  color: var(--color-danger);
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.deleteButton:hover {
+  opacity: 1;
+}
